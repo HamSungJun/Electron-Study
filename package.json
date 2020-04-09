@@ -1,0 +1,58 @@
+{
+  "name": "electron-study",
+  "version": "1.0.0",
+  "description": "Web to Desktop",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "webpack-dev-server --mode development --config ./config/webpack.config.js --open --hot",
+    "build": "cross-env NODE_ENV=production webpack --config ./config/webpack.config.js",
+    "start": "electron main.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HamSungJun/Electron-Study.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/HamSungJun/Electron-Study/issues"
+  },
+  "homepage": "https://github.com/HamSungJun/Electron-Study#readme",
+  "devDependencies": {
+    "@babel/core": "^7.9.0",
+    "@babel/plugin-transform-runtime": "^7.9.0",
+    "@babel/preset-env": "^7.9.5",
+    "@babel/preset-react": "^7.9.4",
+    "autoprefixer": "^9.7.6",
+    "babel-loader": "^8.1.0",
+    "clean-webpack-plugin": "^3.0.0",
+    "concurrently": "^5.1.0",
+    "cross-env": "^7.0.2",
+    "css-loader": "^3.5.1",
+    "electron": "^8.2.1",
+    "electron-builder": "^22.4.1",
+    "electron-is-dev": "^1.2.0",
+    "html-webpack-plugin": "^4.0.4",
+    "mini-css-extract-plugin": "^0.9.0",
+    "node-sass": "^4.13.1",
+    "postcss-loader": "^3.0.0",
+    "sass-loader": "^8.0.2",
+    "style-loader": "^1.1.3",
+    "wait-on": "^4.0.2",
+    "webpack": "^4.42.1",
+    "webpack-cli": "^3.3.11",
+    "webpack-dev-server": "^3.10.3"
+  },
+  "dependencies": {
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-redux": "^7.2.0",
+    "react-router-dom": "^5.1.2",
+    "redux": "^4.0.5",
+    "redux-saga": "^1.1.3",
+    "redux-thunk": "^2.3.0",
+    "styled-components": "^5.1.0"
+  }
+}
